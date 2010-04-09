@@ -57,7 +57,7 @@ article header h1 { font-size: 25px; text-shadow: 0 -1px 1px #000; color: #fff; 
 article h2 { font-size: 23px; padding-top: 15px; }
 article p { font-size: 15px; line-height: 24px; margin: 0; padding-top: 15px; }
 
-.article_content { background: #F7F7F7; padding: 0 15px 15px 15px; -webkit-box-shadow: 1px 2px 3px #252525; }
+.article_content { background: #F7F7F7; padding: 0 15px 15px 15px; -webkit-box-shadow: 1px 2px 3px #252525; -moz-box-shadow: 1px 2px 3px #252525; }
 
 /* FOOTER */
 footer { text-align: center; color: #2E2E2E; }
