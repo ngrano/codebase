@@ -27,7 +27,7 @@ strong {font-weight:bold;}
 em {font-style:italic;}
 
 /* HTML5 elements */
-header, section, footer, nav { display: block; }
+article, header, section, footer, nav { display: block; }
 
 body { background: #5A5A5A; }
 
