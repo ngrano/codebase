@@ -2,7 +2,7 @@
 <html lang="fi">
 <head>
   <meta charset="utf-8" />
-  <title>application.html</title>
+  <title>Codester Blog</title>
 
   <%= stylesheet_link_tag 'codester' %>
 
@@ -11,23 +11,26 @@
 
 <body>
   <header>
-    <h1>Codester Blog</h1>
-    <nav>
-      <ul>
-        <li><%= link_to 'Etusivu', '#' %></li>
-        <li><%= link_to 'Pelit', '#' %></li>
-        <li><%= link_to 'Ohjelmointi', '#' %></li>
-        <li><%= link_to 'Meistä', '#' %></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Codester Blog</h1>
+
+      <nav>
+        <ul>
+          <li><%= link_to 'Etusivu', '#', :class => 'current' %></li>
+          <li><%= link_to 'Pelit', '#' %></li>
+          <li><%= link_to 'Ohjelmointi', '#' %></li>
+          <li><%= link_to 'Meistä', '#' %></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
+  <section class="container">
     <%= yield %>
   </section>
   
-  <footer>
-    <p>Copyright tekstit</p>
+  <footer class="container">
+    <p>Copyright &copy; 2010 Codester Guys</p>
   </footer>
 </body>
 </html>
