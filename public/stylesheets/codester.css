@@ -35,7 +35,7 @@ body { background: #5A5A5A; }
 header { background: #A9D615; height: 150px; margin-bottom: 15px; }
 header h1 { font-size: 60px; text-shadow: 1px 1px 1px #E1FF7E; color: #42530B; padding-top: 10px; }
 header h2 { font-size: 18px; color: #fff; text-shadow: 0 -1px 0 #000; }
-header nav { margin-top: 15px; float: right; font-size: 14px; }
+header nav { margin-top: 19px; float: right; font-size: 14px; }
 header nav a { text-decoration: none; color: #000; }
 header nav ul li { float: left; display: block; margin-left: 20px; }
 
