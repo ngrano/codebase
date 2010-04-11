@@ -3,6 +3,7 @@ Blog::Application.routes.draw do |map|
   # first created -> highest priority.
 
   match '/about_us' => 'home#about'
+  match '/root_path' => 'home#index'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
