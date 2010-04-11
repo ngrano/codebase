@@ -16,10 +16,10 @@
 
       <nav>
         <ul>
-          <li><%= link_to 'Etusivu', root_path, :class => 'current' %></li>
+          <li><%= link_to 'Etusivu', root_path, :class => current_class_if('home#index') %></li>
           <li><%= link_to 'Pelit', '#' %></li>
           <li><%= link_to 'Ohjelmointi', '#' %></li>
-          <li><%= link_to 'Meistä', about_us_path %></li>
+          <li><%= link_to 'Meistä', about_us_path, :class => current_class_if('home#about') %></li>
         </ul>
       </nav>
     </div>
