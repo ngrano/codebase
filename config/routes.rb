@@ -8,6 +8,7 @@ Blog::Application.routes.draw do |map|
   # first created -> highest priority.
 
   match '/about_us' => 'home#about'
+  match '/admin' => 'home#admin'
 
   namespace :admin do
     resources :users
