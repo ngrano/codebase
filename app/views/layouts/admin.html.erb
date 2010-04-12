@@ -15,9 +15,15 @@
       <h1>Codester Blog</h1>
       <h2>Administration</h2>
       <nav>
+        <ul class="personal_nav">
+          <li><%= link_to 'Profiili', '#' %></li>
+          <li><%= link_to 'Kirjaudu ulos', destroy_user_session_path %></li>
+        </ul>
+      </nav>
+
+      <nav>
         <ul>
           <li><%= link_to "Käyttäjät", admin_users_path, :class => current_class_if('admin/users#index') %></li>
-          <li><%= link_to 'Kirjaudu ulos', destroy_user_session_path %></li>
         </ul>
       </nav>
     </div>
