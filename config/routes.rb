@@ -1,10 +1,16 @@
 Blog::Application.routes.draw do |map|
   resources :posts
+  
+  devise_for :users, :controllers => { :sessions => 'admin/sessions' }, :path_prefix => 'admin',
+                     :path_names => { :sign_in => 'login' }
+
+  map.user_root '/admin/users', :controller => 'admin/users'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   match '/about_us' => 'home#about'
+  match '/admin' => 'home#admin'
 
   namespace :admin do
     resources :users

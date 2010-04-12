@@ -2,9 +2,9 @@
 <html lang="fi">
 <head>
   <meta charset="utf-8" />
-  <title>Codester Blog - Admin</title>
+  <title>Codester Blog - Login</title>
 
-  <%= stylesheet_link_tag 'codester', 'codester_admin' %>
+  <%= stylesheet_link_tag 'codester', 'codester_admin', 'login' %>
 
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
@@ -13,17 +13,15 @@
   <header>
     <div class="container">
       <h1>Codester Blog</h1>
-      <h2>Administration</h2>
-      <nav>
-        <ul>
-          <li><%= link_to "Käyttäjät", admin_users_path, :class => current_class_if('admin/users#index') %></li>
-          <li><%= link_to 'Kirjaudu ulos', destroy_user_session_path %></li>
-        </ul>
-      </nav>
+      <h2>Login</h2>
     </div>
   </header>
 
   <section class="container">
+    <% if flash[:alert] %>
+      <p class="flash alert"><%= flash[:alert] %></p>
+    <% end -%>
+
     <%= yield %>
   </section>
   
