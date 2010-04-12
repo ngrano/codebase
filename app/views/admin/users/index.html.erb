@@ -2,7 +2,9 @@
   <header>
     <h1>Käyttäjät</h1>
     <div class="article_content">
-      <p>Tässä listataan kaikki blogin käyttäjät...(editorit, adminit jne.)</p>
+      <% @users.each do |u| %>
+        <p><%= u.name %></p>
+      <% end -%>
     </div>
   </header>
 </article>
