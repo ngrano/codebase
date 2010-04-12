@@ -20,6 +20,12 @@
           <li><%= link_to 'Pelit', '#' %></li>
           <li><%= link_to 'Ohjelmointi', '#' %></li>
           <li><%= link_to 'Meistä', about_us_path, :class => current_class_if('home#about') %></li>
+
+          <% if user_signed_in? %>
+            <li><%= link_to 'Kirjaudu ulos', destroy_user_session_path %></li>
+          <% else %>
+            <li><%= link_to 'Kirjaudu sisään', new_user_session_path %></li>
+          <% end -%>
         </ul>
       </nav>
     </div>
