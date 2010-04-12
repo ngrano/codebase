@@ -1,3 +1,5 @@
+input { font-size: 16px; }
+
 header { background: #C4AF93; }
 header h1 { text-shadow: 1px 1px 1px #FFE4C4; color: #7A6A56; }
 header h2 { font-size: 22px; float: left; }

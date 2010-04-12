@@ -8,6 +8,8 @@
   </header>
 
   <div class="article_content">
-    <p>Tähän tulee profiilitietoja ja asetuksia</p>
+    <% if @user == current_user %>
+      <%= render 'form' %>
+    <% end -%>
   </div>
 </article>
