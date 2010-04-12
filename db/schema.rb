@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(:version => 20100412130142) do
     t.integer  "blog_id"
     t.string   "title"
     t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
@@ -42,4 +44,5 @@ ActiveRecord::Schema.define(:version => 20100412130142) do
   add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
 end
