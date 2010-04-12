@@ -16,7 +16,7 @@
       <h2>Administration</h2>
       <nav>
         <ul class="personal_nav">
-          <li><%= link_to 'Profiili', '#' %></li>
+          <li><%= link_to 'Profiili', admin_user_path(current_user), :class => current_class_if('admin/users#show', :id => current_user.id) %></li>
           <li><%= link_to 'Kirjaudu ulos', destroy_user_session_path %></li>
         </ul>
       </nav>

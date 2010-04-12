@@ -1,0 +1,13 @@
+<article>
+  <header>
+    <% if @user == current_user %>
+    <h1>Oma profiili</h1>
+    <% else %>
+    <h1><%= @user.name %></h1>
+    <% end -%>
+  </header>
+
+  <div class="article_content">
+    <p>Tähän tulee profiilitietoja ja asetuksia</p>
+  </div>
+</article>
