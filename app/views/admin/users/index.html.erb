@@ -3,7 +3,7 @@
     <h1>Käyttäjät</h1>
     <div class="article_content">
       <% @users.each do |u| %>
-        <p><%= u.name %></p>
+        <p><%= link_to u.name, admin_user_path(u) %></p>
       <% end -%>
     </div>
   </header>
