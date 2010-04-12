@@ -4,6 +4,10 @@ Blog::Application.routes.draw do |map|
 
   match '/about_us' => 'home#about'
 
+  namespace :admin do
+    resources :users
+  end
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
