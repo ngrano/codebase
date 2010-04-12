@@ -2,6 +2,8 @@ Blog::Application.routes.draw do |map|
   devise_for :users, :controllers => { :sessions => 'admin/sessions' }, :path_prefix => 'admin',
                      :path_names => { :sign_in => 'login' }
 
+  map.user_root '/admin/users', :controller => 'admin/users'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
