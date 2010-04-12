@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <title>Codester Blog - Login</title>
+
+  <%= stylesheet_link_tag 'codester', 'codester_admin', 'login' %>
+
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Codester Blog</h1>
+      <h2>Login</h2>
+    </div>
+  </header>
+
+  <section class="container">
+    <% if flash[:alert] %>
+      <p class="flash alert"><%= flash[:alert] %></p>
+    <% end -%>
+
+    <%= yield %>
+  </section>
+  
+  <footer class="container">
+    <p>Copyright &copy; 2010 Codester Guys</p>
+  </footer>
+</body>
+</html>
