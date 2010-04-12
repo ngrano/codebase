@@ -5,7 +5,13 @@ gem 'rails', '3.0.0.beta2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+# Use native sqlite3 on Ruby 1.9 and greater
+if RUBY_VERSION < "1.9"
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+else
+  gem 'sqlite3'
+end
+
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
 
 # Use unicorn as the web server
