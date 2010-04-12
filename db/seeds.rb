@@ -9,6 +9,15 @@
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
 # Create default users
+# 
+# u: s@asd.fi
+# p: simoasd
+# 
+# u: o@asd.fi
+# p: olliasd
+#
+# u: n@asd.fi
+# p: niklasasd
 users = ['Simo Niemelä', 'Olli Salmu', 'Niklas Granö'].map do |name|
   first, last = name.split(/\s+/)
   password = (first + 'asd').downcase
