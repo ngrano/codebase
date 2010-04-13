@@ -36,7 +36,7 @@ module Blog
     #   g.template_engine :erb
     #   g.test_framework  :test_unit, :fixture => true
     # end
-    config.cookie_secret = 'codester' * 2
+    config.secret_token = '96ba6a6e5df28a9a8071d5477aff408170d0916f45f2ffe433a9eea4b25368efa7563ff4faa52bfb6b9db3cc91e0f89b2c2f0662265aad29ab8ecf017f0ded23'
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters << :password
