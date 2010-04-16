@@ -1,0 +1,15 @@
+<article>
+  <header>
+    <h1><%= @post.title %></h1>
+  </header>
+  <div class="article_content">
+    <p>
+      <%= @post.body%>
+    </p>
+    <br>
+    <%= link_to 'Muokkaa', edit_post_path(@post) %> | 
+    <%= link_to 'Takaisin', posts_path %>
+  </div>
+</article>
+
+ 

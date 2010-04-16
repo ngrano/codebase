@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    # views/home/index.html.erb
+    # views/posts/index.html.erb
   end  
   
   def about
