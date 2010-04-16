@@ -1,25 +1,13 @@
 <%= link_to 'Uusi artikkeli', new_post_path %>
 
-<table>
 <% @posts.each do |post| %>
-  <tr>
-    <td>
       <article>
         <header><h1><%= post.title %></h1></header>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <div class="article_content">
-        <p>
-          <%= post.body %>
-        </p>
-      </div>
-    </td>
-  </tr>
-      </article><br><br>
-</table>
+        <div class="article_content">
+          <p>
+            <%= post.body %>
+          </p>
+        </div>
+      </article><br /><br />
 <% end %>
-
-<br />
 
