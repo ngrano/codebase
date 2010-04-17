@@ -1,5 +1,5 @@
 Blog::Application.routes.draw do |map|
-  resources :posts
+  resources :posts, :except => :index
   
   devise_for :users, :controllers => { :sessions => 'admin/sessions' }, :path_prefix => 'admin',
                      :path_names => { :sign_in => 'login' }
@@ -63,7 +63,7 @@ Blog::Application.routes.draw do |map|
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
-  root :to => 'posts#index'
+  root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 

@@ -1,8 +1,16 @@
 # encoding: utf-8
 
 class HomeController < ApplicationController
+  
+  # Lists all blogs' recent posts
+  # 
   def index
-    # views/posts/index.html.erb
+    @posts = Post.all
+
+    respond_to do |format|
+      format.html # index.html.erb  
+      format.xml { render :xml => @posts } 
+    end
   end  
   
   def about
