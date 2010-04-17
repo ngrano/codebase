@@ -1,4 +1,4 @@
-Blog::Application.routes.draw do |map|
+Codester::Application.routes.draw do |map|
   resources :posts, :except => :index
   
   devise_for :users, :controllers => { :sessions => 'admin/sessions' }, :path_prefix => 'admin',
