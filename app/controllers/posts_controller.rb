@@ -45,4 +45,9 @@ class PostsController < ApplicationController
       format.xml { head :ok } 
     end 
   end
+
+  def edit
+    @post = Post.find(params[:id])
+  end
+
 end
