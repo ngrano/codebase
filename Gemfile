@@ -28,6 +28,11 @@ gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
 
 # Bundle gems for certain environments:
 # gem 'rspec', :group => :test
-# group :test do
-#   gem 'webrat'
-# end
+group :test do
+  gem 'rspec', '2.0.0.beta.7'
+  gem 'rspec-rails', '2.0.0.beta.7'
+  
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'cucumber-rails'
+end
