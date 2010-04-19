@@ -30,6 +30,8 @@ em {font-style:italic;}
 article, header, section, footer, nav { display: block; }
 
 body { background: #5A5A5A; }
+input { font-size: 16px; }
+textarea { font-size: 13px; }
 
 /* HEADER */
 header { background: #A9D615; height: 150px; margin-bottom: 15px; }
