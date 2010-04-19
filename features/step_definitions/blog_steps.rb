@@ -1,25 +1,40 @@
 # encoding: utf-8
 
 Oletetaan /^että olen kirjautuneena sisään$/ do
-  pending # express the regexp above with the code you wish you had
+  name = 'Simo'
+  e = 'simo@asd.fi'
+  p = 'simoasd'
+  User.new(:name => name, :email => e, :password => p, :password_confirmation => p).save!
+  visit('/admin/users/login')
+  fill_in('user_email', :with => e)
+  fill_in('user_password', :with => p)
+  click_button('user_submit')
 end
 
-Oletetaan /^että olen sivulla "([^\"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Oletetaan /^että olen sivulla "([^\"]*)"$/ do |page|
+  visit(page)
 end
 
-Kun /^syötän kenttään "([^\"]*)" arvon "([^\"]*)"$/ do |arg1, arg2|
-  pending # express the regexp above with the code you wish you had
+Oletetaan /^että minulla on yksi blogi$/ do
+  Blog.create!(:name => 'Ohjelmointi', :alias => 'ohjelmointi')
 end
 
-Kun /^painan nappia "([^\"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Kun /^syötän kenttään "([^\"]*)" arvon "([^\"]*)"$/ do |field, value|
+  fill_in(field, :with => value)
 end
 
-Niin /^ruudulla pitäisi näkyä "([^\"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Kun /^painan nappia "([^\"]*)"$/ do |button|
+  click_button(button)
 end
 
-Kun /^klikkaan linkkiä "([^\"]*)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+Niin /^ruudulla pitäisi näkyä "([^\"]*)"$/ do |text|
+  page.should have_content(text)
+end
+
+Kun /^klikkaan linkkiä "([^\"]*)"$/ do |link|
+  click_link(link)
+end
+
+Niin /^kaikki blogit ovat poistettu$/ do
+  Blog.all.should == []
 end

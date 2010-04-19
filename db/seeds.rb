@@ -33,3 +33,6 @@ users = ['Simo Niemelä', 'Olli Salmu', 'Niklas Granö'].map do |name|
 end
 
 User.create!(users)
+
+# Create blogs
+Blog.create!(['Ohjelmointi', 'Pelit'].map { |b| {:name => b, :alias => b.downcase} })

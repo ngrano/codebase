@@ -1,0 +1,20 @@
+<article>
+  <header>
+    <h1>Uusi blogi</h1>
+  </header>
+  <div class="article_content">
+    <%= form_for [:admin, @blog] do |f| %>
+    <p>
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :alias %><br />
+      <%= f.text_field :alias %>
+    </p>
+    <p>
+      <%= f.submit 'Tallenna' %>
+    </p>
+    <% end -%>
+  </div>
+</article>

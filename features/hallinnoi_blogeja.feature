@@ -7,8 +7,8 @@ Ominaisuus: Hallinnoi blogeja
   Tapaus: Uusi blogi
     Oletetaan että olen kirjautuneena sisään
     Ja että olen sivulla "/admin/blogs/new"
-    Kun syötän kenttään "name" arvon "Alan wake"
-    Ja syötän kenttään "alias" arvon "alan-wake"
+    Kun syötän kenttään "blog_name" arvon "Alan wake"
+    Ja syötän kenttään "blog_alias" arvon "alan-wake"
     Ja painan nappia "Tallenna"
     Niin ruudulla pitäisi näkyä "Blogi luotiin onnistuneesti"
     Ja ruudulla pitäisi näkyä "Alan wake"
@@ -16,6 +16,8 @@ Ominaisuus: Hallinnoi blogeja
   
   Tapaus: Poista blogi listasta
     Oletetaan että olen kirjautuneena sisään
+    Ja että minulla on yksi blogi
     Ja että olen sivulla "/admin/blogs"
     Kun klikkaan linkkiä "Poista"
     Niin ruudulla pitäisi näkyä "Blogi poistettiin onnistuneesti"
+    Ja kaikki blogit ovat poistettu

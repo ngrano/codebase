@@ -1,0 +1,13 @@
+<article>
+  <header>
+    <h1>Blogit</h1>
+  </header>
+  
+  <div class="article_content">
+    <% for blog in @blogs %>
+      <p>
+        <%= blog.name %> <%= link_to 'Poista', [:admin, blog], :method => :delete, :confirm => 'Oletko varma?' %>
+      </p>
+    <% end -%>
+  </div>
+</article>

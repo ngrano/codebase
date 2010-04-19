@@ -16,6 +16,7 @@ Codester::Application.routes.draw do |map|
 
   namespace :admin do
     resources :users
+    resources :blogs
   end
 
   # Sample of regular route:

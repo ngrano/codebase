@@ -29,10 +29,10 @@ gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
 # Bundle gems for certain environments:
 # gem 'rspec', :group => :test
 group :test do
-  gem 'rspec', '2.0.0.beta.7'
-  gem 'rspec-rails', '2.0.0.beta.7'
+  gem 'rspec', :git => "git://github.com/rspec/rspec.git"
+  gem 'rspec-rails', :git => "git://github.com/rspec/rspec-rails.git"
   
-  gem 'database_cleaner'
-  gem 'capybara'
-  gem 'cucumber-rails'
+  gem 'database_cleaner', :git => "git://github.com/bmabey/database_cleaner.git"
+  gem 'capybara', :git => "git://github.com/jnicklas/capybara.git"
+  gem 'cucumber-rails', :git => "git://github.com/aslakhellesoy/cucumber-rails.git"
 end
