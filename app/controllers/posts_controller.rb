@@ -1,8 +1,13 @@
 # encoding: utf-8
 
 class PostsController < ApplicationController
+  before_filter :find_blog
+  before_filter :find_post, :except => [:new, :create]
+  
+  respond_to :html
+  
   def new
-    @post = Post.new
+    @post = @blog.posts.build
 
     respond_to do |format|
       format.html # new.html.erb
@@ -11,33 +16,19 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(params[:post])
-
-    respond_to do |format|
-      if @post.save
-        format.html { redirect_to(@post,
-                      :notice => 'Artikkeli lisätty onnistuneesti') }
-        format.xml  { render :xml =>  @post,
-                      :status => :created, :location => @post }
-      else
-        format.html { render :action => "new"  }
-        format.xml  { render :xml => @post.errors,
-                      :status => :unprocessable_entity  }
-      end
-    end
+    @post = @blog.posts.build(params[:post])
+    flash[:notice] = 'Artikkeli luotiin onnistuneesti' if @post.save
+    respond_with(@post, :location => blog_path(@blog))
   end
 
   def show
-    @post = Post.find(params[:id])  
-
     respond_to do |format| 
       format.html # show.html.erb  
       format.xml { render :xml => @post } 
      end 
   end
 
-  def destroy
-    @post = Post.find(params[:id])  
+  def destroy 
     @post.destroy 
 
     respond_to do |format| 
@@ -47,12 +38,9 @@ class PostsController < ApplicationController
   end
 
   def edit
-    @post = Post.find(params[:id])
   end
 
   def update 
-    @post = Post.find(params[:id])  
-    
     respond_to do |format| 
       if @post.update_attributes(params[:post])  
         format.html { redirect_to(@post,  :notice => 'Post was successfully updated.') } 
@@ -64,4 +52,12 @@ class PostsController < ApplicationController
     end 
   end 
 
+  private
+    def find_blog
+      @blog = Blog.find(params[:blog_id])
+    end
+    
+    def find_post
+      @post = @blog.posts.find(params[:id])
+    end
 end
