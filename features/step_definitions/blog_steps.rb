@@ -15,6 +15,10 @@ Oletetaan /^että minulla on yksi blogi$/ do
   Blog.create!(:name => 'Ohjelmointi', :alias => 'ohjelmointi')
 end
 
+Oletetaan /^että minulla on blogi "([^\"]*)"$/ do |blog_name|
+  Blog.create!(:name => blog_name.capitalize, :alias => blog_name.downcase)
+end
+
 Oletetaan /^että minulla on blogit (.*)$/ do |blogs|
   blogs = blogs.split(', ')
   blogs.each do |blog|

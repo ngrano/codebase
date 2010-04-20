@@ -1,7 +1,10 @@
 class Post < ActiveRecord::Base 
   validates :body,  :presence => true
+  
   validates :title, :presence => true,
-                    :length => { :minimum => 5 } 
+                    :uniqueness => true,
+                    :length => { :minimum => 5 }
 
+  belongs_to :blog
   has_many :comments, :dependent => :destroy
 end 

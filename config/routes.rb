@@ -3,7 +3,7 @@ Codester::Application.routes.draw do |map|
   
   resources :posts, :except => :index do
     resources :comments
-end
+  end
   
   devise_for :users, :controllers => { :sessions => 'admin/sessions' }, :path_prefix => 'admin',
                      :path_names => { :sign_in => 'login' }
@@ -18,7 +18,9 @@ end
 
   namespace :admin do
     resources :users
-    resources :blogs
+    resources :blogs do
+      resources :posts
+    end
   end
 
   # Sample of regular route:
