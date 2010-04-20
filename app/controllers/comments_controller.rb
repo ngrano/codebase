@@ -1,20 +1,23 @@
 class CommentsController < ApplicationController
+  before_filter :find_post
 
   def new
-    @post = Post.find(params[:post_id])
-    @comment = Comment.new
+    @comment = @post.comments.build
   end
 
   def create 
-    @post = Post.find(params[:post_id])  
-    @comment = @post.comments.create(params[:comment])  
-    redirect_to post_path(@post)  
+    @comment = @post.comments.create(params[:comment])
+    redirect_to [@post.blog, @post]
   end 
 
   def destroy 
-    @post = Post.find(params[:post_id])  
-    @comment = @post.comments.find(params[:id])  
-    @comment.destroy redirect_to post_path(@post)  
+    @comment = @post.comments.find(params[:id])
+    @comment.destroy
+    redirect_to [@post.blog, @post]
   end
 
+  private
+    def find_post
+      @post = Post.find(params[:post_id], :include => :blog)
+    end
 end
