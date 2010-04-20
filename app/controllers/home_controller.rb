@@ -16,6 +16,7 @@ class HomeController < ApplicationController
   
   def about
     # views/home/about.html.erb
+    @blog_names = Blog.select(:name)
   end
   
   # TODO: Move this to metal
