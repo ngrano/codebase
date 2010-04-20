@@ -1,0 +1,14 @@
+<article>
+  <header>
+    <h1>Uusi artikkeli</h1>
+  </header>
+  <div class="article_content">
+    <%= form_for [:admin, @blog, @post] do |f| %>
+      <%= f.error_messages %>
+      <%= render :partial => 'admin/posts/form', :object => f %>
+      <p>
+        <%= f.submit 'Tallenna' %>
+       </p>
+      <% end -%>
+  </div>
+</article>
