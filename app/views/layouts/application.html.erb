@@ -18,8 +18,8 @@
         <ul>
           <li><%= link_to 'Etusivu', root_path, :class => current_class_if('home#index') %></li>
           
-          <%- for blog_name in Blog.select(:name) -%>
-          <li><%= link_to blog_name.name, '#' %></li>
+          <%- for blog in Blog.select("id, name") -%>
+          <li><%= link_to blog.name, blog_path(blog), :class => current_class_if('blogs#show', :id => blog.id) %></li>
           <% end -%>
           
           <li><%= link_to 'Meistä', about_us_path, :class => current_class_if('home#about') %></li>

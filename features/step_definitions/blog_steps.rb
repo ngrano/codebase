@@ -26,6 +26,14 @@ Oletetaan /^että minulla on blogit (.*)$/ do |blogs|
   end
 end
 
+Kun /^menen blogin "([^\"]*)" sivulle$/ do |blog|
+  visit blog_path(Blog.find_by_name(blog))
+end
+
+
+Oletetaan /^että on blogit (.*)$/ do |blogs|
+  Oletetaan %{että minulla on blogit #{blogs}}
+end
 
 Niin /^kaikki blogit ovat poistettu$/ do
   Blog.all.should == []

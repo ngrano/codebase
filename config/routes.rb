@@ -1,8 +1,8 @@
 Codester::Application.routes.draw do |map|
-  get "blog/index"
-  
-  resources :posts, :except => :index do
-    resources :comments
+  resources :blogs do
+    resources :posts, :except => :index do
+      resources :comments
+    end
   end
   
   devise_for :users, :controllers => { :sessions => 'admin/sessions' }, :path_prefix => 'admin',
