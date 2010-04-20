@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   # 
   def index
     @blog_names = Blog.select(:name)
-    @posts = Post.all
+    @posts = Post.all(:include => :blog)
 
     respond_to do |format|
       format.html # index.html.erb  

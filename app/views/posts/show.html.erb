@@ -7,8 +7,8 @@
       <%= @post.body%>
     </p>
     <br>
-    <%= link_to 'Kommentoi', new_post_comment_path(@post)%> |
-    <%= link_to 'Muokkaa', edit_post_path(@post) %> | 
+    <%= link_to 'Kommentoi', new_blog_post_comment_path(@blog, @post)%> |
+    <%= link_to 'Muokkaa', edit_blog_post_path(@blog, @post) %> | 
     <%= link_to 'Takaisin', root_path %>
   </div>
 </article>
