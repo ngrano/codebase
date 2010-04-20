@@ -2,11 +2,12 @@
 
 <% @posts.each do |post| %>
       <article>
-        <header><h1><%= post.title %></h1></header>
+        <header><h1><%= link_to post.title, post_path(post) %></h1></header>
         <div class="article_content">
           <p>
-            <%= post.body %>  
+            <%= post.body %>
           </p>
+          <br />
         </div>
       </article><br /><br />
 <% end %>
