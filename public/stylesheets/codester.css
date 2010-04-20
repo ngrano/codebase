@@ -67,4 +67,5 @@ footer { text-align: center; color: #2E2E2E; }
 /* Misc */
 .container { margin: 0 auto; width: 800px; }
 .flash { padding: 10px; font-size: 14px; }
-.alert { background: #FFC4C4; color: #882828; -webkit-box-shadow: 1px 1px 4px #B92323; }
+.alert { background: #FFC4C4; color: #882828; -moz-box-shadow: 1px 1px 3px #B92323; -webkit-box-shadow: 1px 1px 3px #B92323; }
+.notice { background: #C7FFC0; color: #145F0A; -moz-box-shadow: 1px 1px 3px #21C20C; -webkit-box-shadow: 1px 1px 3px #21C20C; }

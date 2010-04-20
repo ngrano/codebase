@@ -34,7 +34,7 @@
 
   <section class="container">
     <%- flash.each do |flash, msg| -%>
-      <div class="flash flash_<%= flash.to_s %>"><%= msg %></div>
+      <p class="flash <%= flash.to_s %>"><%= msg %></p>
     <%- end -%>
 
     <%= yield %>
