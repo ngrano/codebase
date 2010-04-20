@@ -21,3 +21,10 @@ Ominaisuus: Hallinnoi blogeja
     Kun klikkaan linkkiä "Poista"
     Niin minun pitäisi nähdä "Blogi poistettiin onnistuneesti"
     Ja kaikki blogit ovat poistettu
+  
+  Tapaus: Blogien listaus linkkeinä navigaatiossa
+    Oletetaan että minulla on blogit ohjelmointi, pelit
+    Kun menen sivulle "/"
+    Niin minun pitäisi nähdä "Ohjelmointi" valitsimen "nav ul" sisällä
+    Ja minun pitäisi nähdä "Pelit" valitsimen "nav ul" sisällä
+    

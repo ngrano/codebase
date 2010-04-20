@@ -10,7 +10,7 @@ Oletetaan /^että olen sivulla "([^\"]*)"$/ do |page_url|
   visit page_url
 end
 
-Kun /^menen sivulle (.*)$/ do |page_name|
+Kun /^menen sivulle ([^\"]*)$/ do |page_name|
   When %{I go to #{page_name}}
 end
 

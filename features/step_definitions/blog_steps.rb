@@ -15,6 +15,14 @@ Oletetaan /^että minulla on yksi blogi$/ do
   Blog.create!(:name => 'Ohjelmointi', :alias => 'ohjelmointi')
 end
 
+Oletetaan /^että minulla on blogit (.*)$/ do |blogs|
+  blogs = blogs.split(', ')
+  blogs.each do |blog|
+    Blog.create!(:name => blog.capitalize, :alias => blog.downcase)
+  end
+end
+
+
 Niin /^kaikki blogit ovat poistettu$/ do
   Blog.all.should == []
 end

@@ -5,6 +5,7 @@ class HomeController < ApplicationController
   # Lists all blogs' recent posts
   # 
   def index
+    @blog_names = Blog.select(:name)
     @posts = Post.all
 
     respond_to do |format|
