@@ -17,6 +17,11 @@
       <nav>
         <ul>
           <li><%= link_to 'Etusivu', root_path, :class => current_class_if('home#index') %></li>
+          
+          <%- for blog_name in @blog_names -%>
+          <li><%= link_to blog_name.name, '#' %></li>
+          <% end -%>
+          
           <li><%= link_to 'Meistä', about_us_path, :class => current_class_if('home#about') %></li>
 
           <% if user_signed_in? %>

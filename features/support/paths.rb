@@ -10,6 +10,8 @@ module NavigationHelpers
     
     when /the home\s?page/
       '/'
+    when /etusivulla/
+      root_path
     when /blogit/
       admin_blogs_path
     
