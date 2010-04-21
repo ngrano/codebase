@@ -1,14 +1,14 @@
-<%= form_for([@post.blog, @post, @post.comments.build]) do |f| %>  
-  <%= f.error_messages %>  
-  <div class="field">  
-    <%= f.label :Kommentoija %><br />  
+<%= form_for([@post, @post.comments.build]) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :Kommentoija %><br />
     <%= f.text_field :commenter, :size => 50 %>
-  </div>  
-  <div class="field">  
-    <%= f.label :Kommentti %><br />  
-    <%= f.text_area :body, :cols => 93 %>  
-  </div>  
-  <div class="actions">  
-    <%= f.submit %> 
-  </div> 
+  </p>
+  <p>
+    <%= f.label :Kommentti %><br />
+    <%= f.text_area :body, :cols => 93 %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
 <% end %> 
