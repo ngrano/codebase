@@ -1,10 +1,10 @@
 Codester::Application.routes.draw do |map|
-  resources :blogs do
-    resources :posts, :except => :index do
-      resources :comments
-    end
+  resources :blogs, :only => :show
+
+  resources :posts do
+    resources :comments
   end
-  
+
   devise_for :users, :controllers => { :sessions => 'admin/sessions' }, :path_prefix => 'admin',
                      :path_names => { :sign_in => 'login' }
 
@@ -70,7 +70,7 @@ Codester::Application.routes.draw do |map|
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
-  root :to => 'home#index'
+  root :to => 'posts#index'
 
   # See how all your routes lay out with "rake routes"
 
