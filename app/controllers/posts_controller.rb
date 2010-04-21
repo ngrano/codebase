@@ -22,6 +22,8 @@ class PostsController < ApplicationController
   end
 
   def show
+    @comments = @post.comments
+    
     respond_to do |format| 
       format.html # show.html.erb  
       format.xml { render :xml => @post } 
