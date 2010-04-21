@@ -35,6 +35,10 @@
   </header>
 
   <section class="container">
+    <%- flash.each do |key, msg| -%>
+      <p class="flash <%= key.to_s %>"><%= msg %></p>
+    <% end -%>
+
     <%= yield %>
   </section>
   
