@@ -58,7 +58,7 @@ article header { background: 0; height: auto; margin: 0; }
 article header h1 { font-size: 25px; text-shadow: 0 -1px 1px #000; color: #fff; padding-bottom: 10px; background: #5A5A5A; }
 article header a { text-decoration: none; color: #fff; }
 article header a:hover { color: #EBEBEB; }
-article h2 { font-size: 23px; padding-top: 15px; }
+article h2 { font-size: 21px; padding-top: 15px; }
 article p { line-height: 24px; margin: 0; }
 
 .article_content p, .article_content ul, .article_content ol { font-size: 15px; }
