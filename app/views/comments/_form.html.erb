@@ -1,5 +1,5 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
-  <%= f.error_messages %>
+  <%= error_messages_for :comment %>
   <p>
     <%= f.label :Kommentoija %><br />
     <%= f.text_field :commenter, :size => 50 %>
