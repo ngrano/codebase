@@ -161,6 +161,9 @@ fi:
         record_invalid: "Validointi epäonnistui: {{errors}}"
     models:
       user: "Käyttäjä"
+      post: "Artikkeli"
+      blog: "Blogi"
+      comment: "Kommentti"
     attributes:
       user:
         email: "Sähköposti"
@@ -176,6 +179,9 @@ fi:
         title: "Otsikko"
         body: "Sisältö"
         markup: "Merkkauskieli"
+      comment:
+        commenter: "Kommentoija"
+        body: "Kommentti"
 
   devise:
     failure:
