@@ -173,6 +173,9 @@ fi:
       blog:
         name: "Nimi"
         alias: "Alias"
+      post:
+        title: "Otsikko"
+        body: "Sisältö"
 
   devise:
     failure:
