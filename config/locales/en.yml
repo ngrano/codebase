@@ -6,3 +6,7 @@ en:
   update: 'Update'
   add: 'Add'
   or: 'or'
+  sign_in: "Sign in"
+  administration: "Administration"
+  created_at: "Created at"
+  updated_at: "Updated at"

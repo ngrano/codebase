@@ -9,6 +9,11 @@ fi:
   update: 'Päivitä'
   add: 'Lisää'
   or: 'tai'
+  sign_in: "Kirjaudu sisään"
+  administration: "Hallintapaneeli"
+  created_at: "Luotu"
+  updated_at: "Päivitetty"
+  add_comment: "Lisää kommentti"
 
   date:
     formats:
@@ -157,6 +162,23 @@ fi:
         odd: "täytyy olla pariton"
         even: "täytyy olla parillinen"
         record_invalid: "Validointi epäonnistui: {{errors}}"
+    
+    models:
+      user: "Käyttäjä"
+    attributes:
+      user:
+        email: "Sähköposti"
+        password: "Salasana"
+        password_confirmation: "Salanan vahvistus"
+        remember_me: "Muista minut"
+        name: "Nimi"
+        nick: "Nimimerkki"
+      blog:
+        name: "Nimi"
+        alias: "Alias"
+      post:
+        title: "Otsikko"
+        body: "Sisältö"
 
   devise:
     failure:
