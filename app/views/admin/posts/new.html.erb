@@ -4,7 +4,7 @@
   </header>
   <div class="article_content">
     <%= form_for [:admin, @blog, @post] do |f| %>
-      <%= f.error_messages %>
+      <%= error_messages_for :post %>
       <%= render :partial => 'posts/form', :object => f %>
       <p>
         <%= f.submit 'Tallenna' %>

@@ -1,9 +1,9 @@
 class Admin::PostsController < ApplicationController
   before_filter :authenticate_user!, :find_blog
-  
+
   respond_to :html
   layout 'admin'
-  
+
   def new
     @post = @blog.posts.build
   end
@@ -15,7 +15,7 @@ class Admin::PostsController < ApplicationController
   def create
     @post = @blog.posts.build(params[:post])
     flash[:notice] = 'Artikkeli luotiin onnistuneesti' if @post.save
-    respond_with([:admin, @blog, @post])
+    respond_with(@post, :location => [:admin, @blog, @post])
   end
 
   private

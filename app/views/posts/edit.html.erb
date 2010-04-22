@@ -4,7 +4,7 @@
   </header>
   <div class="article_content">
     <%= form_for @post do |f| %>
-      <%= f.error_messages %>
+      <%= error_messages_for :post %>
       <%= render f %>
       <p>
         <%= f.submit t('update') %> <%= or_cancel %>
