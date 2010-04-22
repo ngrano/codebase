@@ -1,12 +1,8 @@
 module ApplicationHelper
-  def current_class_if(*args)
-    options = args.extract_options!
+  def current_class_if(controller_and_action, p = {})
+    controller, action = controller_and_action.split('#')
+    p = p.merge(:controller => controller, :action => action)
     
-    if parts = args.first
-      controller, action = parts.split('#')
-      options.merge!(:controller => controller, :action => action)
-    end
-    
-    'current' if current_page?(options)
+    'current' if p.all? { |key, value| params[key.to_sym] == value.to_s }
   end
 end
