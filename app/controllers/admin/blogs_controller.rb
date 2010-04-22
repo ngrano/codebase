@@ -18,8 +18,8 @@ class Admin::BlogsController < ApplicationController
 
   def create
     @blog = Blog.new(params[:blog])
-    flash[:notice] = 'Blogi luotiin onnistuneesti' if @blog.save!
-    respond_with(:admin, @blog)
+    flash[:notice] = 'Blogi luotiin onnistuneesti' if @blog.save
+    respond_with(@blog, :location => [:admin, @blog])
   end
   
   def destroy

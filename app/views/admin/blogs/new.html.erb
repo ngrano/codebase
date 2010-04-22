@@ -4,6 +4,7 @@
   </header>
   <div class="article_content">
     <%= form_for [:admin, @blog] do |f| %>
+    <%= error_messages_for :blog %>
     <p>
       <%= f.label :name %><br />
       <%= f.text_field :name %>
