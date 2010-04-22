@@ -13,6 +13,7 @@ else
 end
 
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
+gem 'rdiscount'
 
 # Use unicorn as the web server
 # gem 'unicorn'
