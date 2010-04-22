@@ -1,9 +1,9 @@
 module PostsHelper
   def markup(body, markup_lang)
-    case markup_lang.to_s.downcase.to_sym
-    when :markdown
+    case markup_lang.to_s.downcase
+    when 'markdown'
       RDiscount.new(body).to_html
-    when :textile
+    when 'textile'
       RedCloth.new(body).to_html
     else
       body

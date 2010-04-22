@@ -3,7 +3,7 @@
         <header><h1><%= link_to post.title, [post.blog, post] %></h1></header>
         <div class="article_content">
           <p>
-            <%= post.body %>
+            <%= markup post.body, post.markup %>
           </p>
         </div>
         <div class="article_controls">

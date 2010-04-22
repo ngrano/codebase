@@ -3,6 +3,6 @@
     <h1><%= @post.title %></h1>
   </header>
   <div class="article_content">
-    <%= @post.body %>
+    <%= markup @post.body, @post.markup %>
   </div>
 </article>

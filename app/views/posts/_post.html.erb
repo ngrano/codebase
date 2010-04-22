@@ -3,7 +3,7 @@
     <h1><%= post.title %></h1>
   </header>
   <div class="article_content">
-    <p><%= post.body %></p>
+    <p><%= markup post.body, post.markup %></p>
   </div>
 </article>
 <br />
