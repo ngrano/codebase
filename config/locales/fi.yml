@@ -11,6 +11,8 @@ fi:
   or: 'tai'
   sign_in: "Kirjaudu sisään"
   administration: "Hallintapaneeli"
+  created_at: "Luotu"
+  updated_at: "Päivitetty"
 
   date:
     formats:
