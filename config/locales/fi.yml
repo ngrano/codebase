@@ -10,6 +10,7 @@ fi:
   add: 'Lisää'
   or: 'tai'
   sign_in: "Kirjaudu sisään"
+  administration: "Hallintapaneeli"
 
   date:
     formats:
