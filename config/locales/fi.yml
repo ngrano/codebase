@@ -9,6 +9,7 @@ fi:
   update: 'Päivitä'
   add: 'Lisää'
   or: 'tai'
+  sign_in: "Kirjaudu sisään"
 
   date:
     formats:
@@ -157,6 +158,17 @@ fi:
         odd: "täytyy olla pariton"
         even: "täytyy olla parillinen"
         record_invalid: "Validointi epäonnistui: {{errors}}"
+    
+    models:
+      user: "Käyttäjä"
+    attributes:
+      user:
+        email: "Sähköposti"
+        password: "Salasana"
+        password_confirmation: "Salanan vahvistus"
+        remember_me: "Muista minut"
+        name: "Nimi"
+        nick: "Nimimerkki"
 
   devise:
     failure:
