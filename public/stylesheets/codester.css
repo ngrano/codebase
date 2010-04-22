@@ -59,9 +59,14 @@ article header h1 { font-size: 25px; text-shadow: 0 -1px 1px #000; color: #fff; 
 article header a { text-decoration: none; color: #fff; }
 article header a:hover { color: #EBEBEB; }
 article h2 { font-size: 23px; padding-top: 15px; }
-article p { font-size: 15px; line-height: 24px; margin: 0; padding-top: 15px; }
+article p { line-height: 24px; margin: 0; }
+
+.article_content p, .article_content ul, .article_content ol { font-size: 15px; }
+.article_content p, .article_content ul, .article_content ol { padding-top: 15px; }
+.article_content ul, .article_content ol { margin-left: 20px; }
 
 .article_content { background: #F7F7F7; padding: 0 15px 15px 15px; -webkit-box-shadow: 1px 2px 3px #252525; -moz-box-shadow: 1px 2px 3px #252525; }
+.article_content ul { list-style-type: disc; }
 .article_controls { margin-top: 8px; color: #2E2E2E; }
 .article_controls a { text-decoration: none; color: #fff; }
 
