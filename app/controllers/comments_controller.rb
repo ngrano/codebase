@@ -7,13 +7,13 @@ class CommentsController < ApplicationController
 
   def create 
     @comment = @post.comments.create(params[:comment])
-    redirect_to [@post.blog, @post]
+    redirect_to @post
   end 
 
   def destroy 
     @comment = @post.comments.find(params[:id])
     @comment.destroy
-    redirect_to [@post.blog, @post]
+    redirect_to @post
   end
 
   private
