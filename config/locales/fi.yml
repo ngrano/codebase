@@ -170,6 +170,9 @@ fi:
         remember_me: "Muista minut"
         name: "Nimi"
         nick: "Nimimerkki"
+      blog:
+        name: "Nimi"
+        alias: "Alias"
 
   devise:
     failure:
