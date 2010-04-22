@@ -136,11 +136,6 @@ fi:
   #activemodel:
   activerecord:
     errors:
-      template:
-        header:
-          one:    "Virhe syötteessä esti mallin {{model}} tallentamisen"
-          other:  "{{count}} virhettä esti mallin {{model}} tallentamisen"
-        body: "Seuraavat kentät aiheuttivat ongelmia:"
   #activerecord:
     #errors:
       messages:
@@ -164,7 +159,6 @@ fi:
         odd: "täytyy olla pariton"
         even: "täytyy olla parillinen"
         record_invalid: "Validointi epäonnistui: {{errors}}"
-    
     models:
       user: "Käyttäjä"
     attributes:
@@ -215,6 +209,11 @@ fi:
       unlock_instructions: 'Tilin lukituksen poisto -ohjeet'
 
   errors:
+    template:
+      header:
+        one:    "Virhe syötteessä esti mallin {{model}} tallentamisen"
+        other:  "{{count}} virhettä esti mallin {{model}} tallentamisen"
+      body: "Seuraavat kentät aiheuttivat ongelmia:"
     messages:
       not_found: "ei löytynyt"
       already_confirmed: "oli jo vahvistettu"
