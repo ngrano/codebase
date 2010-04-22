@@ -181,6 +181,7 @@ fi:
       post:
         title: "Otsikko"
         body: "Sisältö"
+        markup: "Merkkauskieli"
 
   devise:
     failure:

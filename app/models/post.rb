@@ -1,4 +1,6 @@
-class Post < ActiveRecord::Base 
+class Post < ActiveRecord::Base
+  MARKUP_LANGUAGES = ['Markdown', 'Textile', 'HTML']
+  
   default_scope order('created_at DESC')
   
   validates :body,  :presence => true

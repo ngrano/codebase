@@ -3,8 +3,12 @@
     <h1>Muokkaa artikkelia</h1>
   </header>
   <div class="article_content">
-    <p>
-      <%= render 'form' %>
-    </p>
+    <%= form_for @post do |f| %>
+      <%= f.error_messages %>
+      <%= render f %>
+      <p>
+        <%= f.submit t('update') %> <%= or_cancel %>
+      </p>
+    <% end -%>
   </div>
 </article>
