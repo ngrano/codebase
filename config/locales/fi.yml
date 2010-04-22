@@ -14,6 +14,8 @@ fi:
   created_at: "Luotu"
   updated_at: "Päivitetty"
   add_comment: "Lisää kommentti"
+  back: "Takaisin"
+  cancel: "Peruuta"
 
   date:
     formats:
