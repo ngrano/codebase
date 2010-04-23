@@ -73,6 +73,14 @@ article p { line-height: 24px; margin: 0; }
 /* FOOTER */
 footer { text-align: center; color: #2E2E2E; }
 
+/*
+	Icons
+	
+	Todo: Pack all icons into a single image
+*/
+.icon { background-repeat: no-repeat; background-position: 0 -1px; padding-left: 18px; }
+.icon_add_comment { background-image: url(/images/sweetie/16-comment-question.png); }
+
 /* Misc */
 .container { margin: 0 auto; width: 800px; }
 .flash { padding: 10px; font-size: 14px; }
