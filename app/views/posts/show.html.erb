@@ -8,7 +8,7 @@
 
   <div class="article_controls">
     <%= link_to 'Kommentoi', new_post_comment_path(@post), :class => 'icon icon_add_comment' %> |
-    <%= link_to 'Muokkaa', edit_post_path(@post) %> | 
+    <%= link_to 'Muokkaa', edit_post_path(@post), :class => 'icon icon_edit_article' %> | 
     <%= link_to 'Takaisin', root_path %>
   </div>
 </article>
