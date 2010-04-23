@@ -1,11 +1,1 @@
-<% @posts.each do |post| %>
-      <article>
-        <header><h1><%= link_to post.title, post %></h1></header>
-        <div class="article_content">
-          <%= markup post.body, post.markup %>
-        </div>
-        <div class="article_controls">
-          <%= link_to 'Kommentoi', new_post_comment_path(post) %>
-        </div>
-      </article><br />
-<% end %>
+<%= render @posts %>
