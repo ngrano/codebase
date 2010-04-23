@@ -5,6 +5,7 @@
   <title>Codester Blog</title>
 
   <%= stylesheet_link_tag 'codester' %>
+  <%= javascript_include_tag 'jquery-1.4.2.min', 'rails', 'application' %>
 
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
@@ -44,6 +45,7 @@
   
   <footer class="container">
     <p>Copyright &copy; 2010 Codester Guys</p>
+    <p><%= link_to image_tag("rails.png", :title => "Powered by Ruby on Rails"), "http://rubyonrails.org" %></p>
   </footer>
 </body>
 </html>
