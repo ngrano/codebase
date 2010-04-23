@@ -81,6 +81,7 @@ footer { text-align: center; color: #2E2E2E; }
 .icon { background-repeat: no-repeat; background-position: 0 -1px; padding-left: 18px; }
 .icon_add_comment { background-image: url(/images/fugue/balloon--plus.png); }
 .icon_edit_article { background-image: url(/images/fugue/document--pencil.png); }
+.icon_comments { background-image: url(/images/fugue/balloons.png); }
 
 /* Misc */
 .container { margin: 0 auto; width: 800px; }
