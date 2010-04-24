@@ -83,6 +83,12 @@ footer { text-align: center; color: #2E2E2E; }
 .icon_edit_article { background-image: url(/images/fugue/document--pencil.png); }
 .icon_comments { background-image: url(/images/fugue/balloons.png); }
 
+/* Error explanation */
+.errorExplanation { background: #FFC4C4; color: #882828; position: relative; top: 10px; margin-bottom: 10px; }
+.errorExplanation h2 { background: #CF6565; color: #742020; margin: 0; padding: 8px; }
+.errorExplanation h2, .errorExplanation p, .errorExplanation ul { padding-left: 14px; }
+.errorExplanation ul { padding-bottom: 8px; }
+
 /* Misc */
 .container { margin: 0 auto; width: 800px; }
 .flash { padding: 10px; font-size: 14px; }
