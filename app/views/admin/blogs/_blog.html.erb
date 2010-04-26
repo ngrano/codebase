@@ -1,0 +1,10 @@
+<tr>
+  <td><%= blog.id %></td>
+  <td><%= blog.name %></td>
+  <td><%= l(blog.created_at) %></td>
+  <td><%= l(blog.updated_at) %></td>
+  <td align="right">
+    <%= link_to 'Muokkaa', edit_admin_blog_path(blog) %> |
+    <%= link_to 'Poista', admin_blog_path(blog), :method => :delete, :confirm => 'Oletko varma?' %>
+  </td>
+</tr>

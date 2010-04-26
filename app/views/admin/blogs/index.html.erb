@@ -3,9 +3,14 @@
 <div class="article_content">
   <%= title 'Blogit' %>
 
-  <% for blog in @blogs %>
-    <p>
-      <%= blog.name %> <%= link_to 'Poista', [:admin, blog], :method => :delete, :confirm => 'Oletko varma?' %>
-    </p>
-  <% end -%>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Nimi</th>
+      <th>Luotu</th>
+      <th colspan="2">Päivitetty</th>
+    </tr>
+    
+    <%= render :partial => "admin/blogs/blog", :collection => @blogs %>
+  </table>
 </div>
