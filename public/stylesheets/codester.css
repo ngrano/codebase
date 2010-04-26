@@ -90,6 +90,7 @@ footer { text-align: center; color: #2E2E2E; }
 .errorExplanation ul { padding-bottom: 8px; }
 
 /* Misc */
+.profile_image { float: right; padding-top: 12px; }
 .container { margin: 0 auto; width: 800px; }
 .flash { padding: 10px; font-size: 14px; }
 .alert { background: #FFC4C4; color: #882828; -moz-box-shadow: 1px 1px 3px #B92323; -webkit-box-shadow: 1px 1px 3px #B92323; }
