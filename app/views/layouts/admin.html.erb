@@ -5,30 +5,35 @@
   <title>Codester Blog - Admin</title>
   <%= csrf_meta_tag %>
 
-  <%= stylesheet_link_tag 'codester', 'codester_admin' %>
+  <%= stylesheet_link_tag 'codester_admin' %>
   <%= javascript_include_tag 'jquery-1.4.2.min', 'rails', 'application' %>
 
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <%= yield(:head) %>
 </head>
 
 <body>
   <header>
     <div class="container">
       <h1>Codester Blog</h1>
-      <h2><%= t('administration') %></h2>
-      <nav>
-        <ul class="personal_nav">
-          <li><%= link_to 'Profiili', admin_user_path(current_user), :class => current_class_if('admin/users#show', :id => current_user.id) %></li>
-          <li><%= link_to 'Kirjaudu ulos', destroy_user_session_path %></li>
-        </ul>
-      </nav>
 
-      <nav>
-        <ul>
-          <li><%= link_to "Blogit", admin_blogs_path, :class => current_class_if('admin/blogs#index') %></li>
-          <li><%= link_to "Käyttäjät", admin_users_path, :class => current_class_if('admin/users#index') %></li>
-        </ul>
-      </nav>
+      <div class="container top_nav_container">
+        <nav class="personal_nav">
+          <ul>
+            <li><%= link_to 'Profiili', admin_user_path(current_user), :class => current_class_if('admin/users#show', :id => current_user.id) %></li>
+            <li><%= link_to 'Kirjaudu ulos', destroy_user_session_path %></li>
+          </ul>
+        </nav>
+
+        <nav class="admin_nav">
+          <ul>
+            <li><%= link_to "Blogit", admin_blogs_path, :class => current_class_if('admin/blogs#index') %></li>
+            <li><%= link_to "Käyttäjät", admin_users_path, :class => current_class_if('admin/users#index') %></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
     </div>
   </header>
 
@@ -37,7 +42,14 @@
       <p class="flash <%= flash.to_s %>"><%= msg %></p>
     <%- end -%>
 
-    <%= yield %>
+    <%- if yield(:aside) -%>
+      <% content_for(:head) { stylesheet_link_tag 'codester_admin_wide' } %>
+      <%= yield(:aside) %>
+    <% end -%>
+
+    <div class="content">
+      <%= yield %>
+    </div>
   </section>
   
   <footer class="container">

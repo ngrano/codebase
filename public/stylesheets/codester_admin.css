@@ -1,5 +1,65 @@
-header { background: #C4AF93; }
-header h1 { text-shadow: 1px 1px 1px #FFE4C4; color: #7A6A56; }
+/* Reset (Railsdispatch.com) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;}
+body {line-height:1;}
+ol, ul {list-style-type:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
+:focus {outline:0;}
+ins {text-decoration:none;}
+del {text-decoration:line-through;}
+table {width:99%; margin-bottom:1.4em; clear:left;}
+th {border-bottom:2px solid #333; font-weight:bold; text-align:left;}
+td {border-bottom:1px solid #E1E1E1; font-size:12px;}
+th, td {padding:4px 4px 4px 0;}
+tr:last-child td {border-bottom-width:0;}
+tfoot {font-style:italic;}
+caption {background:transparent;}
+
+/* Blueprint CSS (Railsdispatch.com) */
+body, blockquote * {font:13px/1.5 Helvetica, Arial, sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+p {margin-bottom:1em;}
+ul {list-style-type:none;}
+ol {list-style-type:decimal;}
+abbr, acronym {border-bottom-width:0;}
+strong {font-weight:bold;}
+em {font-style:italic;}
+
+/* HTML5 elements */
+article, header, section, footer, nav { display: block; }
+
+body { background: #D3D3D3; }
+
+header { background: #414141; height: 90px; }
+header h1 { font-size: 23px; padding-top: 10px; color: #F8F8F8; }
 header h2 { font-size: 22px; float: left; }
 
-.personal_nav { margin-left: 20px; }
+/* Layout elements */
+.container { width: 960px; margin: 0 auto; }
+.top_nav_container { background: #202020; margin: 13px 0 0 0; font-size: 14px; }
+
+section.container { margin-top: 10px; }
+section article h2 { font-size: 19px; }
+
+.content { background: #fff; }
+
+/* Navigation */
+nav a { text-decoration: none; }
+.admin_nav a, .personal_nav a { color: #fff; padding: 6px 13px; display: block; }
+
+.admin_nav { float: left; width: 50%; }
+.personal_nav { float: right; width: 50%; }
+.admin_nav ul, .personal_nav ul { background: #202020; }
+
+.admin_nav a.current, .personal_nav a.current { background: #fff; color: #2C2C2C; }
+
+.personal_nav ul { float: right; }
+.personal_nav li { float: left; }
+
+.admin_nav ul { float: left; }
+.admin_nav li { float: left; }
+
+/* Misc */
+.clear { clear: both; }
+.clear_left { clear: left; }
