@@ -5,14 +5,7 @@
   
   <%= form_for [:admin, @blog] do |f| %>
   <%= error_messages_for :blog %>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :alias %><br />
-    <%= f.text_field :alias %>
-  </p>
+  <%= render :partial => 'admin/blogs/form', :object => f %>
   <p>
     <%= f.submit 'Tallenna' %>
   </p>

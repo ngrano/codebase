@@ -1,0 +1,13 @@
+<%= render_content_nav %>
+
+<div class="article_content">
+  <%= title 'Muokkaa blogia' %>
+  
+  <%= form_for [:admin, @blog] do |f| %>
+    <%= error_messages_for :blog %>
+    <%= render :partial => 'admin/blogs/form', :object => f %>
+    <p>
+      <%= f.submit 'Päivitä' %>
+    </p>
+  <% end -%>
+</div>

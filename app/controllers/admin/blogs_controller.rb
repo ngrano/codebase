@@ -15,6 +15,16 @@ class Admin::BlogsController < ApplicationController
   def show
     @blog = Blog.find(params[:id])
   end
+  
+  def edit
+    @blog = Blog.find(params[:id])
+  end
+  
+  def update
+    @blog = Blog.find(params[:id])
+    flash[:notice] = 'Blogi päivitettiin onnistuneesti' if @blog.update_attributes(params[:blog])
+    respond_with(@blog, :location => admin_blogs_path)
+  end
 
   def create
     @blog = Blog.new(params[:blog])
