@@ -1,10 +1,7 @@
-<article>
-  <header>
-    <h1>Käyttäjät</h1>
-  </header>
-  <div class="article_content">
-    <% @users.each do |u| %>
-      <p><%= link_to u.name, admin_user_path(u) %></p>
-    <% end -%>
-  </div>
-</article>
+<%= title 'Käyttäjät' %>
+
+<div class="article_content">
+  <% @users.each do |u| %>
+    <p><%= link_to u.name, admin_user_path(u) %></p>
+  <% end -%>
+</div>

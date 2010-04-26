@@ -1,8 +1,5 @@
-<article>
-  <header>
-    <h1><%= @post.title %></h1>
-  </header>
-  <div class="article_content">
-    <%= markup @post.body, @post.markup %>
-  </div>
-</article>
+<%= title @post.title %>
+
+<div class="article_content">
+  <%= markup @post.body, @post.markup %>
+</div>

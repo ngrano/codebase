@@ -21,4 +21,9 @@ module LayoutHelper
       link_to text, root_path
     end
   end
+
+  def title(text)
+    content_for(:title) { text }
+    content_tag(:h2) { text }
+  end
 end

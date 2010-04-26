@@ -2,7 +2,7 @@
 <html lang="fi">
 <head>
   <meta charset="utf-8" />
-  <title>Codester Blog - Admin</title>
+  <title>Codester Blog Admin - <%= yield(:title) %></title>
   <%= csrf_meta_tag %>
 
   <%= stylesheet_link_tag 'codester_admin' %>
@@ -48,7 +48,15 @@
     <% end -%>
 
     <div class="content">
-      <%= yield %>
+      <%- if yield(:content_nav) -%>
+      <div class="content_nav">
+        <%= yield(:content_nav) %>
+      </div>
+      <% end -%>
+
+      <article>
+        <%= yield %>
+      </article>
     </div>
   </section>
   

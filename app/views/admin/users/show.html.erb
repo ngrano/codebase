@@ -1,17 +1,13 @@
-<article>
-  <header>
-    <% if @user == current_user %>
-    <h1>Oma profiili</h1>
-    <% else %>
-    <h1><%= @user.name %></h1>
-    <% end -%>
-  </header>
+<% if @user == current_user %>
+<%= title 'Oma profiili' %>
+<% else %>
+<%= title @user.name %>
+<% end -%>
 
-  <div class="article_content">
-    <%= image_tag @user.gravatar_url, :class => 'profile_image' %>
+<div class="article_content">
+  <%= image_tag @user.gravatar_url, :class => 'profile_image' %>
 
-    <% if @user == current_user %>
-      <%= render 'form' %>
-    <% end -%>
-  </div>
-</article>
+  <% if @user == current_user %>
+    <%= render 'form' %>
+  <% end -%>
+</div>
