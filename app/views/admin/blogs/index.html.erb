@@ -2,9 +2,7 @@
 
 <div class="article_content">
   <%= title 'Blogit' %>
-  
-  <p><%= link_to "Lisää uusi blogi", new_admin_blog_path %></p>
-  
+
   <% for blog in @blogs %>
     <p>
       <%= blog.name %> <%= link_to 'Poista', [:admin, blog], :method => :delete, :confirm => 'Oletko varma?' %>
