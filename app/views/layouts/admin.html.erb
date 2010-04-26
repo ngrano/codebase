@@ -29,6 +29,7 @@
         <nav class="admin_nav">
           <ul>
             <li><%= link_to "Blogit", admin_blogs_path, :class => current_class_if('admin/blogs#') %></li>
+            <li><%= link_to "Artikkelit", admin_posts_path, :class => current_class_if('admin/posts#') %></li>
             <li><%= link_to "Käyttäjät", admin_users_path, :class => current_class_if('admin/users#') %></li>
           </ul>
         </nav>

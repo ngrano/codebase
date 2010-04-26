@@ -1,13 +1,13 @@
 <%= render_content_nav %>
 
 <div class="article_content">
-  <%= title 'Uusi artikkeli' %>
+  <%= title 'Muokkaa artikkelia' %>
   
-  <%= form_for [:admin, @blog, @post] do |f| %>
+  <%= form_for [:admin, @post] do |f| %>
     <%= error_messages_for :post %>
     <%= render :partial => 'posts/form', :object => f %>
     <p>
-      <%= f.submit 'Tallenna' %>
-     </p>
-    <% end -%>
+      <%= f.submit 'Päivitä' %>
+    </p>
+  <% end -%>
 </div>

@@ -1,0 +1,16 @@
+<%= render_content_nav %>
+
+<div class="article_content">
+  <%= title 'Artikkelit' %>
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Otsikko</th>
+      <th>Luotu</th>
+      <th colspan="2">Päivitetty</th>
+    </tr>
+    
+    <%= render :partial => "admin/posts/post", :collection => @posts %>
+  </table>
+</div>

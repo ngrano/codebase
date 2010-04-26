@@ -3,6 +3,10 @@
   <%= form.text_field :title, :size => 50 %>
 </p>
 <p>
+  <%= form.label :blog_id, 'Blogi' %><br />
+  <%= form.select :blog_id, Blog.select('id, name').order('name').map { |b| [b.name, b.id] } %>
+</p>
+<p>
   <%= form.label :markup %><br />
   <%= form.select :markup, Post::MARKUP_LANGUAGES.map { |m| [m, m.downcase] } %>
 </p>

@@ -5,6 +5,7 @@ class Post < ActiveRecord::Base
   
   validates :body,  :presence => true
   validates :markup, :presence => true
+  validates :blog_id, :presence => true
   
   validates :title, :presence => true,
                     :uniqueness => true,
