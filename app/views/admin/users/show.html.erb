@@ -8,6 +8,8 @@
   </header>
 
   <div class="article_content">
+    <%= image_tag @user.gravatar_url, :class => 'profile_image' %>
+
     <% if @user == current_user %>
       <%= render 'form' %>
     <% end -%>

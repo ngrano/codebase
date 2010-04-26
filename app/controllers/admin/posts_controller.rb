@@ -15,7 +15,7 @@ class Admin::PostsController < ApplicationController
   def create
     @post = @blog.posts.build(params[:post])
     flash[:notice] = 'Artikkeli luotiin onnistuneesti' if @post.save
-    respond_with(@post, :location => [:admin, @blog, @post])
+    respond_with(@post)
   end
 
   private
