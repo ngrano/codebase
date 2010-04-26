@@ -1,10 +1,11 @@
-<% if @user == current_user %>
-<%= title 'Oma profiili' %>
-<% else %>
-<%= title @user.name %>
-<% end -%>
 
 <div class="article_content">
+  <% if @user == current_user %>
+  <%= title 'Oma profiili' %>
+  <% else %>
+  <%= title @user.name %>
+  <% end -%>
+  
   <%= image_tag @user.gravatar_url, :class => 'profile_image' %>
 
   <% if @user == current_user %>

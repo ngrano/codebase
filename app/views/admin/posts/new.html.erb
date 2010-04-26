@@ -1,6 +1,7 @@
-<%= title 'Uusi artikkeli' %>
 
 <div class="article_content">
+  <%= title 'Uusi artikkeli' %>
+  
   <%= form_for [:admin, @blog, @post] do |f| %>
     <%= error_messages_for :post %>
     <%= render :partial => 'posts/form', :object => f %>

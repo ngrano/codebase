@@ -1,6 +1,7 @@
-<%= title 'Uusi blogi' %>
 
 <div class="article_content">
+  <%= title 'Uusi blogi' %>
+  
   <%= form_for [:admin, @blog] do |f| %>
   <%= error_messages_for :blog %>
   <p>

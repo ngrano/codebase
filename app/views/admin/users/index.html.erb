@@ -1,6 +1,7 @@
-<%= title 'Käyttäjät' %>
 
 <div class="article_content">
+  <%= title 'Käyttäjät' %>
+  
   <% @users.each do |u| %>
     <p><%= link_to u.name, admin_user_path(u) %></p>
   <% end -%>
