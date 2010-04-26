@@ -1,0 +1,4 @@
+<% content_nav do %>
+  <li><%= link_to 'Kaikki', send(:"admin_#{content_nav}_path"), :class => current_sub_if("admin/#{content_nav}#index") %></li>
+  <li><%= link_to 'Uusi', send(:"new_admin_#{content_nav.singularize}_path"), :class => current_sub_if("admin/#{content_nav}#new") || current_sub_if("admin/#{content_nav}#create") %></li>
+<% end -%>

@@ -37,17 +37,19 @@ header h2 { font-size: 22px; float: left; }
 
 /* Layout elements */
 .container { width: 960px; margin: 0 auto; }
-.top_nav_container { background: #202020; margin: 13px 0 0 0; font-size: 14px; }
 
-section.container { margin-top: 10px; }
+section.container { margin-top: 18px; }
 section article h2 { font-size: 19px; }
+section article { clear: both; }
 
 .content { background: #fff; }
 .article_content { padding: 0 13px 4px 13px; }
 .article_content h2 { padding: 8px 0 10px 0; font-size: 21px; }
 
-/* Navigation */
+/* Top Navigation */
 nav a { text-decoration: none; }
+
+.top_nav_container { background: #202020; margin: 13px 0 0 0; font-size: 14px; }
 .admin_nav a, .personal_nav a { color: #fff; padding: 6px 13px; display: block; }
 
 .admin_nav { float: left; width: 50%; }
@@ -62,6 +64,15 @@ nav a { text-decoration: none; }
 .admin_nav ul { float: left; }
 .admin_nav li { float: left; }
 
+/* Content nav */
+.content_nav { background: #414141; }
+.content_nav li { float: left; }
+.content_nav li a { text-decoration: none; display: block; padding: 6px 13px; color: #fff; }
+
+.content_nav a.current_sub { background: #202020; }
+
 /* Misc */
-.clear { clear: both; }
 .clear_left { clear: left; }
+.clearfix:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix {display:block;}
+.clear {clear:both;}

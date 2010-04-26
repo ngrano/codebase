@@ -26,4 +26,12 @@ module LayoutHelper
     content_for(:title) { text }
     content_tag(:h2) { text }
   end
+  
+  def content_nav(&block)
+    content_for(:content_nav) { block.call }
+  end
+  
+  def render_content_nav
+    render :partial => 'admin/shared/content_nav', :object => controller_name
+  end
 end
