@@ -30,6 +30,8 @@ em {font-style:italic;}
 article, header, section, footer, nav { display: block; }
 
 body { background: #D3D3D3; }
+input { font-size: 16px; }
+textarea { font-size: 13px; }
 
 header { background: #414141; height: 90px; }
 header h1 { font-size: 23px; padding-top: 10px; color: #F8F8F8; }
@@ -42,9 +44,9 @@ section.container { margin-top: 18px; }
 section article h2 { font-size: 19px; }
 section article { clear: both; }
 
-.content { background: #fff; }
+.content { background: #fff; font-size: 1.12em; }
 .article_content { padding: 0 13px 4px 13px; }
-.article_content h2 { padding: 8px 0 10px 0; font-size: 21px; }
+.article_content h2 { padding: 8px 0 10px 0; font-size: 22px; }
 
 /* Top Navigation */
 nav a { text-decoration: none; }
@@ -72,6 +74,7 @@ nav a { text-decoration: none; }
 .content_nav a.current_sub { background: #202020; }
 
 /* Misc */
+.profile_image { float: right; padding: 12px 0 6px 0; }
 .clear_left { clear: left; }
 .clearfix:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .clearfix {display:block;}
