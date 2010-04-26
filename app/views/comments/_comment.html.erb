@@ -1,7 +1,12 @@
 <p>  
   <b><i><%= comment.commenter %></i></b>
+  
 </p> 
 
 <p>  
   <%= comment.body %> 
 </p> 
+
+<p>
+  <i>Kommentoitu <%= I18n.l(comment.created_at, :format => :long) %></i>
+</p>
