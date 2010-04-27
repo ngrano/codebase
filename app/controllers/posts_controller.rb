@@ -2,6 +2,7 @@
 
 class PostsController < ApplicationController
   before_filter :find_post, :except => :index
+  before_filter :authenticate_user!, :only => [:edit, :update]
 
   respond_to :html
 
