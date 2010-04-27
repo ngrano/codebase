@@ -11,5 +11,6 @@ class Post < ActiveRecord::Base
                     :length => { :minimum => 5 }
 
   belongs_to :blog
+  belongs_to :user
   has_many :comments, :dependent => :destroy
 end 

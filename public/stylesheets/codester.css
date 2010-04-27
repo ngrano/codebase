@@ -55,17 +55,19 @@ section { color: #383838; padding-bottom: 20px; }
 
 /* Articles */
 article header { background: 0; height: auto; margin: 0; }
-article header h1 { font-size: 25px; text-shadow: 0 -1px 1px #000; color: #fff; padding-bottom: 10px; background: #5A5A5A; }
+article header h1 { font-size: 25px; text-shadow: 0 -1px 1px #000; color: #fff; padding-top: 0; padding-bottom: 3px; background: #5A5A5A; }
 article header a { text-decoration: none; color: #fff; }
 article header a:hover { color: #EBEBEB; }
 article h2 { font-size: 21px; padding-top: 15px; }
 article p { line-height: 24px; margin: 0; }
+article header img { padding-bottom: 5px; }
+article header p { font-size: 11px; text-shadow: 0 -1px 1px #000; color: #fff; padding-bottom: 3px; }
 
 .article_content p, .article_content ul, .article_content ol { font-size: 15px; }
 .article_content p, .article_content ul, .article_content ol { padding-top: 15px; }
 .article_content ul, .article_content ol { margin-left: 20px; }
 
-.article_content { background: #F7F7F7; padding: 0 15px 15px 15px; -webkit-box-shadow: 1px 2px 3px #252525; -moz-box-shadow: 1px 2px 3px #252525; }
+.article_content { clear: both; background: #F7F7F7; padding: 0 15px 15px 15px; -webkit-box-shadow: 1px 2px 3px #252525; -moz-box-shadow: 1px 2px 3px #252525; }
 .article_content ul { list-style-type: disc; }
 .article_controls { margin-top: 8px; color: #2E2E2E; }
 .article_controls a { text-decoration: none; color: #fff; }
@@ -82,6 +84,8 @@ footer { text-align: center; color: #2E2E2E; }
 .icon_add_comment { background-image: url(/images/fugue/balloon--plus.png); }
 .icon_edit_article { background-image: url(/images/fugue/document--pencil.png); }
 .icon_comments { background-image: url(/images/fugue/balloons.png); }
+.icon_clock { background-image: url(/images/fugue/clock.png); }
+.icon_clock_small { background-image: url(/images/fugue/clock-small.png); }
 
 /* Error explanation */
 .errorExplanation { background: #FFC4C4; color: #882828; position: relative; top: 10px; margin-bottom: 10px; }
@@ -95,3 +99,5 @@ footer { text-align: center; color: #2E2E2E; }
 .flash { padding: 10px; font-size: 14px; }
 .alert { background: #FFC4C4; color: #882828; -moz-box-shadow: 1px 1px 3px #B92323; -webkit-box-shadow: 1px 1px 3px #B92323; }
 .notice { background: #C7FFC0; color: #145F0A; -moz-box-shadow: 1px 1px 3px #21C20C; -webkit-box-shadow: 1px 1px 3px #21C20C; }
+
+img.right { float: right; clear: left; padding-left: 10px; }
