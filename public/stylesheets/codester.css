@@ -61,7 +61,7 @@ article header { background: 0; height: auto; margin: 0; }
 article header h1 { font-size: 25px; text-shadow: 0 -1px 1px #000; color: #fff; padding-top: 0; padding-bottom: 3px; background: #5A5A5A; }
 article header a { text-decoration: none; color: #fff; }
 article header a:hover { color: #EBEBEB; }
-article h2 { font-size: 20px; padding-bottom: 2px; padding-top: 4px; }
+article h2 { font-size: 19px; padding-bottom: 3px; padding-top: 4px; font-weight: bold; }
 article p { line-height: 24px; margin: 0; }
 article header img { padding-bottom: 5px; }
 article header p { font-size: 12px; text-shadow: 0 -1px 1px #000; color: #fff; padding-bottom: 3px; }
