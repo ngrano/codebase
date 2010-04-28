@@ -37,8 +37,10 @@ User.create!(users)
 # Create blogs
 Blog.create!(['Ohjelmointi', 'Pelit'].map { |b| {:name => b, :alias => b.downcase} })
 
+lorem_ipsum = File.open(Rails.root.join('spec', 'fixtures', 'lorem_ipsum.mkd'), 'rb').read
+
 # Create posts
 Post.create!([
-  { :title => 'Rails 3', :body => 'asd asd', :user_id => User.first.id, :markup => 'markdown', :blog_id => Blog.first.id },
-  { :title => 'Gears of war 3 vuonna 2011', :body => 'asd asdasd asd', :markup => 'markdown', :user_id => User.last.id, :blog_id => Blog.last.id }
+  { :title => 'Rails 3', :body => lorem_ipsum, :user_id => User.first.id, :markup => 'markdown', :blog_id => Blog.first.id },
+  { :title => 'Gears of war 3 vuonna 2011', :body => lorem_ipsum, :markup => 'markdown', :user_id => User.last.id, :blog_id => Blog.last.id }
 ])
