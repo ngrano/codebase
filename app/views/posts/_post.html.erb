@@ -5,10 +5,11 @@
       <span class="icon icon_clock"><%= l post.created_at, :format => :long %></span>
     </p>
   </header>
-  <%= image_tag post.user.gravatar_url(:size => 65), :class => 'left author_image' %>
+    <%= link_to image_tag(post.user.gravatar_url(:size => 65), :class => 'left author_image', :title => post.user.name, :rel => 'tipsy'), '#' %>
   <div class="article_content">
     <%= markup post.body, post.markup %>
   </div>
+
   <div class="article_controls">
     <%= link_to 'Kommentoi', post_path(post, :anchor => 'add_comment'), :class => 'icon icon_add_comment' %> |
     <%= link_to post.comments.size, post_path(post, :anchor => 'comments'), :class => 'icon icon_comments' %>

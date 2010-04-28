@@ -6,7 +6,7 @@
     </p>
   </header>
 
-  <%= image_tag @post.user.gravatar_url(:size => 65), :class => 'left author_image' %>
+      <%= link_to image_tag(@post.user.gravatar_url(:size => 65), :class => 'left author_image', :title => @post.user.name, :rel => 'tipsy'), '#' %>
 
   <div class="article_content">
     <%= markup @post.body, @post.markup %>
