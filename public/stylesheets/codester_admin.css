@@ -48,6 +48,9 @@ section article { clear: both; }
 .article_content { padding: 0 13px 4px 13px; }
 .article_content h2 { padding: 8px 0 10px 0; font-size: 22px; }
 
+.link_to_frontpage { margin-top: 18px; -webkit-box-shadow: 1px 1px #313131; -moz-box-shadow: 1px 1px #313131; -webkit-border-radius: 10px; -moz-border-radius: 10px; color: #633E00; padding: 2px 8px; font-size: 11px; text-decoration: none; background: #BE8800; }
+.link_to_frontpage:hover { background: #E2A200; }
+
 /* Top Navigation */
 nav a { text-decoration: none; }
 
@@ -76,6 +79,7 @@ nav a { text-decoration: none; }
 /* Misc */
 .profile_image { float: right; padding: 12px 0 6px 0; }
 .clear_left { clear: left; }
+.right { float: right; }
 .clearfix:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .clearfix {display:block;}
 .clear {clear:both;}

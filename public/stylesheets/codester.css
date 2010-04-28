@@ -50,6 +50,9 @@ header nav a.current {
 	-moz-border-radius-topright: 10px;
 }
 
+.link_to_admin { margin-top: 26px; -webkit-box-shadow: 1px 1px #157780; -moz-box-shadow: 1px 1px #157780; -webkit-border-radius: 15px; -moz-border-radius: 15px; color: #0F4C52; padding: 4px 8px; font-size: 11px; text-decoration: none; background: #49C1CC; }
+.link_to_admin:hover { background: #24CADA; }
+
 /* CONTENT */
 section { color: #383838; padding-bottom: 20px; }
 
@@ -101,3 +104,4 @@ footer { text-align: center; color: #2E2E2E; }
 .notice { background: #C7FFC0; color: #145F0A; -moz-box-shadow: 1px 1px 3px #21C20C; -webkit-box-shadow: 1px 1px 3px #21C20C; }
 
 img.right { float: right; clear: left; padding-left: 10px; }
+.right { float: right; }
