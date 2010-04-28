@@ -64,7 +64,7 @@ article header a:hover { color: #EBEBEB; }
 article h2 { font-size: 21px; padding-top: 15px; }
 article p { line-height: 24px; margin: 0; }
 article header img { padding-bottom: 5px; }
-article header p { font-size: 11px; text-shadow: 0 -1px 1px #000; color: #fff; padding-bottom: 3px; }
+article header p { font-size: 12px; text-shadow: 0 -1px 1px #000; color: #fff; padding-bottom: 3px; }
 
 .article_content p, .article_content ul, .article_content ol { font-size: 15px; }
 .article_content p, .article_content ul, .article_content ol { padding-top: 15px; }
