@@ -12,6 +12,6 @@
 
   <div class="article_controls">
     <%= link_to 'Kommentoi', post_path(post, :anchor => 'add_comment'), :class => 'icon icon_add_comment' %> |
-    <%= link_to post.comments.size, post_path(post, :anchor => 'comments'), :class => 'icon icon_comments' %>
+    <%= link_to post.comments.size, post_path(post, :anchor => 'comments'), :class => 'icon icon_comments', :title => t('comment', :count => post.comments.size), :rel => "tipsy" %>
   </div>
 </article><br /><br />

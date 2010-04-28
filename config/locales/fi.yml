@@ -17,6 +17,10 @@ fi:
   back: "Takaisin"
   cancel: "Peruuta"
 
+  comment:
+    one: "1 kommentti"
+    other: "{{count}} kommenttia"
+
   date:
     formats:
       default: "%e. %Bta %Y"
