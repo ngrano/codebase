@@ -70,10 +70,12 @@ article header p { font-size: 12px; text-shadow: 0 -1px 1px #000; color: #fff; p
 .article_content p, .article_content ul, .article_content ol { padding-top: 15px; }
 .article_content ul, .article_content ol { margin-left: 20px; }
 
-.article_content { clear: both; background: #F7F7F7; padding: 0 15px 15px 15px; -webkit-box-shadow: 1px 2px 3px #252525; -moz-box-shadow: 1px 2px 3px #252525; }
+.article_content { background: #F7F7F7; padding: 0 15px 15px 15px; -webkit-box-shadow: 1px 2px 3px #252525; -moz-box-shadow: 1px 2px 3px #252525; }
 .article_content ul { list-style-type: disc; }
 .article_controls { margin-top: 8px; color: #2E2E2E; }
 .article_controls a { text-decoration: none; color: #fff; }
+
+.author_image { position: absolute; margin: 0 0 0 -65px; z-index: -1; -webkit-box-shadow: 1px 2px 3px #252525; -moz-box-shadow: 1px 2px 3px #252525; }
 
 /* FOOTER */
 footer { text-align: center; color: #2E2E2E; }
@@ -105,3 +107,4 @@ footer { text-align: center; color: #2E2E2E; }
 
 img.right { float: right; clear: left; padding-left: 10px; }
 .right { float: right; }
+.left { float: left; }

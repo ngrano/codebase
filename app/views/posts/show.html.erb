@@ -1,11 +1,13 @@
 <article>
   <header>
-    <%= image_tag @post.user.gravatar_url(:size => 50), :class => 'right' %>
     <h1><%= @post.title %></h1>
     <p>
       <span class="icon icon_clock"><%= l @post.created_at, :format => :long %></span>
     </p>
   </header>
+
+  <%= image_tag @post.user.gravatar_url(:size => 65), :class => 'left author_image' %>
+
   <div class="article_content">
     <%= markup @post.body, @post.markup %>
   </div>
