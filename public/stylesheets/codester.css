@@ -75,7 +75,7 @@ article header p { font-size: 12px; text-shadow: 0 -1px 1px #000; color: #fff; p
 .article_controls { margin-top: 8px; color: #2E2E2E; }
 .article_controls a { text-decoration: none; color: #fff; }
 
-.author_image { margin: 0 0 0 -65px; -webkit-box-shadow: 0 2px 2px #252525; -moz-box-shadow: 0 2px 3px #252525; }
+.author_image { margin: 0 0 0 -65px; -webkit-box-shadow: 0 2px 2px #252525; -moz-box-shadow: 0 2px 2px #252525; }
 
 #comments, #add_comment { font-size: 23px; }
 
