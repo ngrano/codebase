@@ -40,7 +40,10 @@
 
   <section class="container">
     <%- flash.each do |key, msg| -%>
-      <p class="flash <%= key.to_s %>"><%= msg %></p>
+      <p class="flash <%= key.to_s %>">
+        <%= link_to 'Piilota', '#', :class => "hide_flash" %>
+        <%= msg %>
+      </p>
     <% end -%>
 
     <%= yield %>
