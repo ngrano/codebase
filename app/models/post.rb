@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
   validates :blog_id, :presence => true
 
   validates :title, :presence => true,
-                    :uniqueness => true,
+                    :uniqueness => true
 
   belongs_to :blog
   belongs_to :user
