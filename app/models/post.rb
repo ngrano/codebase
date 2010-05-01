@@ -9,7 +9,6 @@ class Post < ActiveRecord::Base
 
   validates :title, :presence => true,
                     :uniqueness => true,
-                    :length => { :minimum => 5 }
 
   belongs_to :blog
   belongs_to :user
