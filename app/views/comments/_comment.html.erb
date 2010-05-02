@@ -1,14 +1,7 @@
-<p>  
-  <b><%= comment.commenter %></b>
-  kirjoitti...
-</p> 
-
-<p>  
-  <%= comment.body %> 
-</p> 
-
 <p>
+  <span class="comment_commenter"><%= comment.commenter %></span>
   <span class="icon icon_clock"><%= l comment.created_at, :format => :long %></span>
 </p>
-
-<hr />
+<p>
+  <span class="comment_content"><%= comment.body %></span>
+</p>

@@ -77,6 +77,8 @@ article header p { font-size: 12px; text-shadow: 0 -1px 1px #000; color: #fff; p
 
 .author_image { margin: 0 0 0 -65px; -webkit-box-shadow: 0 2px 2px #252525; -moz-box-shadow: 0 2px 2px #252525; }
 
+/* Comments */
+.comment_commenter { font-weight: bold; color: #A9D615; }
 #comments, #add_comment { font-size: 23px; }
 
 /* FOOTER */
