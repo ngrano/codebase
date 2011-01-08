@@ -5,6 +5,7 @@ Codester::Application.routes.draw do |map|
     resources :comments
   end
 
+  resources :users
   devise_for :users, :controllers => { :sessions => 'admin/sessions' }, :path_prefix => 'admin',
                      :path_names => { :sign_in => 'login' }
 
