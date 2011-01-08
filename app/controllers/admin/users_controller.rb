@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 class Admin::UsersController < ApplicationController
   respond_to :html
 

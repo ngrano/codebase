@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 class Comment < ActiveRecord::Base
   validates_presence_of :commenter, :body
 

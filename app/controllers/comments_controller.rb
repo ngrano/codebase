@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 class CommentsController < ApplicationController
   before_filter :find_post
 

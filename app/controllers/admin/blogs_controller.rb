@@ -1,3 +1,5 @@
+# encoding: UTF-8
+
 class Admin::BlogsController < ApplicationController
   before_filter :authenticate_user!
   
