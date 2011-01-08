@@ -1,0 +1,180 @@
+GIT
+  remote: git://github.com/aslakhellesoy/cucumber-rails.git
+  revision: f3002faf12560dc7a7dc16cafb282ffbbf892029
+  specs:
+    cucumber-rails (0.4.0.beta.1)
+      cucumber (~> 0.10.0)
+      nokogiri (~> 1.4.4)
+      rack-test (~> 0.5.6)
+
+GIT
+  remote: git://github.com/bmabey/database_cleaner.git
+  revision: 9bd76e743de34175f22c1bd649af32a123dfe547
+  specs:
+    database_cleaner (0.6.1)
+
+GIT
+  remote: git://github.com/jnicklas/capybara.git
+  revision: f06e1cb718e5a4727eaa23946ca7d03bf2ea3795
+  specs:
+    capybara (0.4.0)
+      celerity (>= 0.7.9)
+      culerity (>= 0.2.4)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      selenium-webdriver (>= 0.0.27)
+      xpath (~> 0.1.2)
+
+GIT
+  remote: git://github.com/plataformatec/devise.git
+  revision: fb4ec6e9da702aba77e536027a24aacada94ccd2
+  specs:
+    devise (1.2.rc)
+      bcrypt-ruby (~> 2.1.2)
+      orm_adapter (~> 0.0.3)
+      warden (~> 1.0.3)
+
+GIT
+  remote: git://github.com/rspec/rspec-rails.git
+  revision: 99595296ba38be82c72f68eb6fd132fd7f30c3be
+  specs:
+    rspec-rails (2.4.1)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      railties (~> 3.0)
+      rspec (~> 2.4.0)
+
+GIT
+  remote: git://github.com/rspec/rspec.git
+  revision: 9c46a5fd7b8862a98da95237f89753c0b6b52a5d
+  specs:
+    rspec (2.4.0)
+      rspec-core (~> 2.4.0)
+      rspec-expectations (~> 2.4.0)
+      rspec-mocks (~> 2.4.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    RedCloth (4.2.3)
+    abstract (1.0.0)
+    actionmailer (3.0.3)
+      actionpack (= 3.0.3)
+      mail (~> 2.2.9)
+    actionpack (3.0.3)
+      activemodel (= 3.0.3)
+      activesupport (= 3.0.3)
+      builder (~> 2.1.2)
+      erubis (~> 2.6.6)
+      i18n (~> 0.4)
+      rack (~> 1.2.1)
+      rack-mount (~> 0.6.13)
+      rack-test (~> 0.5.6)
+      tzinfo (~> 0.3.23)
+    activemodel (3.0.3)
+      activesupport (= 3.0.3)
+      builder (~> 2.1.2)
+      i18n (~> 0.4)
+    activerecord (3.0.3)
+      activemodel (= 3.0.3)
+      activesupport (= 3.0.3)
+      arel (~> 2.0.2)
+      tzinfo (~> 0.3.23)
+    activeresource (3.0.3)
+      activemodel (= 3.0.3)
+      activesupport (= 3.0.3)
+    activesupport (3.0.3)
+    arel (2.0.6)
+    bcrypt-ruby (2.1.3)
+    builder (2.1.2)
+    celerity (0.8.6)
+    childprocess (0.1.6)
+      ffi (~> 0.6.3)
+    coderay (0.9.6)
+    cucumber (0.10.0)
+      builder (>= 2.1.2)
+      diff-lcs (~> 1.1.2)
+      gherkin (~> 2.3.2)
+      json (~> 1.4.6)
+      term-ansicolor (~> 1.0.5)
+    culerity (0.2.14)
+    diff-lcs (1.1.2)
+    erubis (2.6.6)
+      abstract (>= 1.0.0)
+    ffi (0.6.3)
+      rake (>= 0.8.7)
+    gherkin (2.3.3)
+      json (~> 1.4.6)
+    gravtastic (3.1.0)
+    i18n (0.5.0)
+    json (1.4.6)
+    json_pure (1.4.6)
+    mail (2.2.14)
+      activesupport (>= 2.3.6)
+      i18n (>= 0.4.0)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    mime-types (1.16)
+    nokogiri (1.4.4)
+    orm_adapter (0.0.4)
+    polyglot (0.3.1)
+    rack (1.2.1)
+    rack-mount (0.6.13)
+      rack (>= 1.0.0)
+    rack-test (0.5.7)
+      rack (>= 1.0)
+    rails (3.0.3)
+      actionmailer (= 3.0.3)
+      actionpack (= 3.0.3)
+      activerecord (= 3.0.3)
+      activeresource (= 3.0.3)
+      activesupport (= 3.0.3)
+      bundler (~> 1.0)
+      railties (= 3.0.3)
+    railties (3.0.3)
+      actionpack (= 3.0.3)
+      activesupport (= 3.0.3)
+      rake (>= 0.8.7)
+      thor (~> 0.14.4)
+    rake (0.8.7)
+    rdiscount (1.6.5)
+    rspec-core (2.4.0)
+    rspec-expectations (2.4.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.4.0)
+    rubyzip (0.9.4)
+    selenium-webdriver (0.1.2)
+      childprocess (~> 0.1.5)
+      ffi (~> 0.6.3)
+      json_pure
+      rubyzip
+    sqlite3 (0.1.1)
+      ffi (>= 0.6.3)
+    term-ansicolor (1.0.5)
+    thor (0.14.6)
+    treetop (1.4.9)
+      polyglot (>= 0.3.1)
+    tzinfo (0.3.23)
+    warden (1.0.3)
+      rack (>= 1.0.0)
+    xpath (0.1.2)
+      nokogiri (~> 1.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  RedCloth
+  capybara!
+  coderay
+  cucumber-rails!
+  database_cleaner!
+  devise!
+  gravtastic
+  rails (= 3.0.3)
+  rdiscount
+  rspec!
+  rspec-rails!
+  sqlite3

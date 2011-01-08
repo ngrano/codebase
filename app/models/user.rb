@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  include Gravtastic
   is_gravtastic!
 
   # Include default devise modules. Others available are:
